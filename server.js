@@ -75,3 +75,7 @@ app.get('/chat', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Munim ji server running on port ${PORT}`));
+
+app.get('/', (req, res) => {
+  res.send('Munim Ji is ready to serve!');
+});
